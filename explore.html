@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Mysuru</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h2>Mysuru 2.0</h2>
+
+            <div>
+                <a href="index.html">Home</a>
+                <a href="explore.html">Explore</a>
+                <a href="favorites.html">Favorites</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="page-heading">
+            <h1>Explore Mysuru</h1>
+
+            <p>
+                Discover places, food, heritage and experiences
+                around the city.
+            </p>
+        </section>
+
+
+        <section class="search-section">
+            <label class="visually-hidden" for="searchInput">Search the Mysuru guide</label>
+            <div class="search-controls">
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Try dosa, birds, trains, art..."
+                    aria-describedby="searchHint"
+                    autocomplete="off"
+                >
+                <button id="clearSearch" type="button" disabled>Clear</button>
+            </div>
+            <p id="searchHint" class="search-hint">Search names, interests, food and descriptions, or try a popular search.</p>
+            <div class="quick-searches" aria-label="Popular searches">
+                <span>Try:</span>
+                <button type="button" data-search="dosa">Dosa</button>
+                <button type="button" data-search="sweets">Sweets</button>
+                <button type="button" data-search="birds">Birds</button>
+                <button type="button" data-search="art">Art</button>
+                <button type="button" data-search="trains">Trains</button>
+                <button type="button" data-search="temple">Temples</button>
+                <button type="button" data-search="bonda">Bonda</button>
+            </div>
+        </section>
+
+
+        <section class="categories">
+
+            <button type="button" data-category="All" aria-pressed="true">All</button>
+            <button type="button" data-category="Heritage" aria-pressed="false">Heritage</button>
+            <button type="button" data-category="Nature" aria-pressed="false">Nature</button>
+            <button type="button" data-category="Food" aria-pressed="false">Food</button>
+            <button type="button" data-category="Entertainment" aria-pressed="false">Entertainment</button>
+
+        </section>
+
+
+        <section class="explore-places">
+
+            <p id="resultsSummary" class="results-summary" aria-live="polite"></p>
+            <div class="explore-container">
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; 2026 Mysuru 2.0 | Explore the Royal City</p>
+    </footer>
+</body>
+</html>
